@@ -291,54 +291,6 @@ func TestTwilight(t *testing.T) {
 
 var newDelhi = Observer{Latitude: 28.644800, Longitude: 77.216721}
 
-// TODO: FIXME
-// func TestRahukaalam(t *testing.T) {
-// 	type args struct {
-// 		observer Observer
-// 		date     time.Time
-// 		daytime  bool
-// 	}
-// 	tests := []struct {
-// 		name      string
-// 		args      args
-// 		wantStart time.Time
-// 		wantEnd   time.Time
-// 		wantErr   bool
-// 	}{
-
-// 		// 	datetime.date(2015, 12, 1),
-// 		// 	(
-// 		// 		datetime.datetime(2015, 12, 1, 9, 17),
-// 		// 		datetime.datetime(2015, 12, 1, 10, 35),
-// 		// 	),
-// 		// ),
-// 		// (
-// 		// 	datetime.date(2015, 12, 2),
-// 		// 	(
-// 		// 		datetime.datetime(2015, 12, 2, 6, 40),
-// 		// 		datetime.datetime(2015, 12, 2, 7, 58),
-// 		// 	),
-
-// 		// Day
-// 		// {args: args{daytime: true, observer: newDelhi, date: time.Date(2015, 12, 1, 0, 0, 0, 0, time.UTC)}, wantStart: time.Date(2015, 12, 1, 9, 17, 0, 0, time.UTC), wantEnd: time.Date(2015, 12, 1, 10, 35, 0, 0, time.UTC)},
-// 		// {args: args{daytime: true, observer: london, date: time.Date(2021, 4, 16, 0, 0, 0, 0, time.UTC)}, wantStart: time.Date(2021, 4, 16, 10, 15, 37, 0, time.UTC), wantEnd: time.Date(2021, 4, 16, 12, 0, 14, 0, time.UTC)},
-
-// 		// Night
-// 		// {args: args{daytime: true, observer: newDelhi, date: time.Date(2015, 12, 2, 0, 0, 0, 0, time.UTC)}, wantStart: time.Date(2015, 12, 2, 6, 40, 0, 0, time.UTC), wantEnd: time.Date(2015, 12, 2, 7, 58, 0, 0, time.UTC)},
-// 	}
-// 	for _, tt := range tests {
-// 		t.Run(tt.name, func(t *testing.T) {
-// 			start, end, err := Rahukaalam(tt.args.observer, tt.args.date, tt.args.daytime)
-// 			if (err != nil) != tt.wantErr {
-// 				t.Errorf("Dawn() error = %v, wantErr %v", err, tt.wantErr)
-// 				return
-// 			}
-// 			require.True(t, almostEqual(start, tt.wantStart, 60*time.Second), "start want: %v but got: %v", tt.wantStart, start)
-// 			require.True(t, almostEqual(end, tt.wantEnd, 60*time.Second), "end want: %v but got: %v", tt.wantEnd, end)
-// 		})
-// 	}
-// }
-
 func TestElevation(t *testing.T) {
 	type args struct {
 		observer   Observer
